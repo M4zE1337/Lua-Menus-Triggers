@@ -1,0 +1,12 @@
+TriggerEvent("esxambulancejob:revive")
+==========================================================================================================
+TriggerEvent('esx_LigmaMenu:StaffUI')
+==========================================================================================================
+Parachute:
+
+CreateThread(function()
+            local playerPed = PlayerPedId()
+            local playerPos = GetEntityCoords(playerPed)
+
+            GiveWeaponToPed(playerPed, GetHashKey('gadget_parachute'), 1, true, true)
+end)
